@@ -16,6 +16,8 @@ const types = {
   ".js": "text/javascript; charset=utf-8",
   ".svg": "image/svg+xml",
   ".ico": "image/x-icon",
+  ".xml": "application/xml; charset=utf-8",
+  ".txt": "text/plain; charset=utf-8",
 };
 
 function send(res, status, body, type) {
@@ -32,7 +34,7 @@ const server = http.createServer((req, res) => {
     return;
   }
 
-  if (pathname === "/") pathname = "/entity-home.html";
+  if (pathname === "/") pathname = "/index.html";
 
   const filePath = path.resolve(root, `.${pathname}`);
   const rel = path.relative(root, filePath);
