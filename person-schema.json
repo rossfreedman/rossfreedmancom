@@ -69,8 +69,8 @@
       ],
       "address": {
         "@type": "PostalAddress",
-        "addressLocality": "Northbrook",
-        "addressRegion": "IL",
+        "addressLocality": "Chicago area",
+        "addressRegion": "Illinois",
         "addressCountry": "US"
       },
       "sameAs": [
